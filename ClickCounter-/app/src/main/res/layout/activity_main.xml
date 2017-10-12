@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.diak.a14p_major_attila_mobildolgozat.MainActivity"
+    android:background="@android:color/black">
+
+    <Button
+        android:text="-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_minusz"
+        android:layout_alignBaseline="@+id/button_plusz"
+        android:layout_alignBottom="@+id/button_plusz"
+        android:layout_toRightOf="@+id/button_plusz"
+        android:layout_toEndOf="@+id/button_plusz" />
+
+    <Button
+        android:text="reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_reset"
+        android:layout_alignBaseline="@+id/button_minusz"
+        android:layout_alignBottom="@+id/button_minusz"
+        android:layout_toRightOf="@+id/button_minusz"
+        android:layout_toEndOf="@+id/button_minusz" />
+
+    <TextView
+        android:text="0"
+        android:textSize="30dp"
+        android:textColor="#FF0000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_eredmeny"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/button_plusz"
+        android:layout_alignStart="@+id/button_plusz"
+        android:layout_marginTop="53dp" />
+
+    <Button
+        android:text="+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:id="@+id/button_plusz"
+        android:layout_marginTop="81dp"
+        android:layout_below="@+id/textView_eredmeny"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
